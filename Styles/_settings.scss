@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "font-1";
+  src: url(./fonts/Inter-ExtraBold.ttf);
+}
+@font-face {
+  font-family: "font-2";
+  src: url(./fonts/Inter-Thin.ttf);
+}
+@font-face {
+  font-family: "font-ital";
+  src: url(./fonts/Merriweather-LightItalic.ttf);
+}
+
+$color1: rgb(233, 233, 233);
+$color2: rgb(18, 18, 18);
+$color3: rgb(186, 186, 186);
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}

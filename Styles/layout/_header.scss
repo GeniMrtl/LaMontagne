@@ -1,0 +1,15 @@
+header {
+  background: url center/cover;
+
+  h1 {
+    font-family: font-1, sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: $color1;
+    @include center;
+    text-align: center;
+    padding: 300px 100px;
+    max-width: 50%;
+    margin: 0 auto;
+  }
+}
