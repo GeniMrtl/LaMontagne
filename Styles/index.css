@@ -1,10 +1,14 @@
 @font-face {
   font-family: "font-1";
-  src: url(./fonts/Inter-ExtraBold.ttf);
+  src: url(./fonts/Inter-SemiBold.ttf);
 }
 @font-face {
   font-family: "font-2";
   src: url(./fonts/Inter-Thin.ttf);
+}
+@font-face {
+  font-family: "font-bold";
+  src: url(./fonts/Inter-ExtraBold.ttf);
 }
 @font-face {
   font-family: "font-ital";
@@ -17,11 +21,48 @@
   list-style: none;
 }
 
-header {
-  background: url center/cover;
+body {
+  background: url(../Styles/images/bg1.jpg) fixed center/cover;
 }
+
+.milieu {
+  width: 1000px;
+  margin: 0 auto;
+  background: rgb(233, 233, 233);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(233, 233, 233);
+  font-size: 1rem;
+}
+a:hover {
+  color: rgb(18, 18, 18);
+}
+
+button {
+  cursor: pointer;
+  text-decoration: none;
+  font-family: font-1;
+  font-weight: 200;
+  text-transform: uppercase;
+  padding: 10px;
+  font-size: 0.8rem;
+  border-style: none;
+  background: transparent;
+  color: rgb(18, 18, 18);
+  border: solid 1px rgb(18, 18, 18);
+  display: block;
+  margin: 30px auto;
+}
+button:hover {
+  background: rgb(18, 18, 18);
+  color: rgb(233, 233, 233);
+  font-family: font-ital;
+}
+
 header h1 {
-  font-family: font-1, sans-serif;
+  font-family: font-bold, sans-serif;
   font-size: 3rem;
   text-transform: uppercase;
   color: rgb(233, 233, 233);
@@ -29,7 +70,275 @@ header h1 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 300px 100px;
-  max-width: 50%;
+  padding: 300px 100px 30px;
   margin: 0 auto;
+  letter-spacing: 5px;
+}
+header p {
+  font-family: font-ital, serif;
+  color: rgb(233, 233, 233);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .arrow-down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .arrow-down i {
+  font-size: 1rem;
+  color: rgb(233, 233, 233);
+  padding: 20px;
+  border: solid 2px rgb(233, 233, 233);
+  margin: 120px;
+  border-radius: 10000000%;
+}
+
+nav {
+  width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 60% 30%;
+  gap: 10%;
+  background: rgba(255, 255, 255, 0.31);
+}
+nav .nav {
+  display: flex;
+  justify-content: space-between;
+}
+nav .social {
+  display: flex;
+  justify-content: space-around;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav ul .home {
+  width: 100%;
+  color: rgb(18, 18, 18);
+  background: rgb(233, 233, 233);
+}
+nav ul button {
+  cursor: pointer;
+  height: 100%;
+  margin: 0;
+  padding: 20px;
+  text-decoration: none;
+  font-family: font-1;
+  text-transform: uppercase;
+  font-size: 1rem;
+  border-style: none;
+  background: transparent;
+  color: rgb(233, 233, 233);
+}
+nav ul button:hover {
+  color: rgb(18, 18, 18);
+  background: rgb(233, 233, 233);
+}
+nav ul button:hover ~ .home {
+  background: transparent;
+  color: rgb(233, 233, 233);
+}
+nav ul button a {
+  text-decoration: none;
+  color: rgb(233, 233, 233);
+  font-size: 1rem;
+}
+nav ul button a:hover {
+  color: rgb(18, 18, 18);
+}
+
+.part-1 h4 {
+  text-align: center;
+  font-family: font-2;
+  padding: 50px;
+  position: relative;
+  color: rgb(18, 18, 18);
+}
+.part-1 h4:before {
+  content: "";
+  background: rgb(129, 129, 129);
+  width: 25%;
+  height: 0.5px;
+  position: absolute;
+  transform: translate(-300px, 10px);
+}
+.part-1 h4:after {
+  content: "";
+  background: rgb(129, 129, 129);
+  width: 25%;
+  height: 0.5px;
+  position: absolute;
+  transform: translate(65px, 10px);
+}
+.part-1 h2 {
+  font-family: font-bold;
+  text-transform: uppercase;
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  width: 50%;
+}
+.part-1 p {
+  font-family: font-ital;
+  color: rgb(129, 129, 129);
+  text-align: center;
+  width: 40%;
+  margin: 30px auto;
+}
+.part-1 .image-1 {
+  background: url(./images/pic01.jpg) center/cover;
+  height: 500px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.part-2 {
+  display: flex;
+}
+.part-2 .news-1 {
+  padding: 30px;
+  box-shadow: 1px -1px 0px rgba(0, 0, 0, 0.2705882353);
+}
+.part-2 .news-2 {
+  padding: 30px;
+  box-shadow: 0px -1px 0px rgba(0, 0, 0, 0.2705882353);
+}
+.part-2 h4 {
+  text-align: center;
+  font-family: font-2;
+  font-size: 0.8rem;
+  padding: 20px;
+  color: rgb(18, 18, 18);
+}
+.part-2 h3 {
+  font-family: font-1;
+  text-transform: uppercase;
+  font-size: 1rem;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  width: 50%;
+}
+.part-2 p {
+  text-align: justify;
+  font-family: font-2;
+  font-size: 0.8rem;
+  color: rgb(18, 18, 18);
+  line-height: 35px;
+  width: 90%;
+  margin: 0 auto;
+}
+.part-2 .img-2 {
+  background: url(./images/pic02.jpg) center/cover;
+  height: 300px;
+  width: 90%;
+  margin: 30px auto;
+}
+.part-2 .img-3 {
+  background: url(./images/pic03.jpg) center/cover;
+  height: 300px;
+  width: 90%;
+  margin: 30px auto;
+}
+
+footer {
+  width: 1000px;
+  background: rgb(233, 233, 233);
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+footer .left-part {
+  padding: 20px;
+}
+footer .left-part form {
+  display: flex;
+  flex-direction: column;
+}
+footer .left-part form label {
+  font-family: font-1;
+  color: rgb(129, 129, 129);
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  padding: 20px 0;
+}
+footer .left-part form input {
+  padding: 10px;
+}
+footer .left-part form input:focus {
+  box-shadow: 1px 1px 1px rgb(0, 15, 128);
+  border: solid 1px rgb(18, 18, 18);
+}
+footer .left-part form input[type=text] {
+  border-style: none;
+  border: 1px solid rgb(129, 129, 129);
+  height: 40px;
+  outline: none;
+  background: transparent;
+  border-radius: 3px;
+}
+footer .left-part form input[type=textarea] {
+  border-style: none;
+  border: 1px solid rgb(129, 129, 129);
+  height: 100px;
+  outline: none;
+  background: transparent;
+  border-radius: 3px;
+}
+footer .left-part form input[type=submit] {
+  cursor: pointer;
+  text-decoration: none;
+  font-family: font-1;
+  font-weight: 200;
+  text-transform: uppercase;
+  padding: 10px;
+  font-size: 0.8rem;
+  border-style: none;
+  background: transparent;
+  color: rgb(129, 129, 129);
+  border: solid 1px rgb(129, 129, 129);
+  width: 200px;
+  margin: 30px 0;
+}
+footer .left-part form input[type=submit]:hover {
+  background: rgb(18, 18, 18);
+  color: rgb(233, 233, 233);
+  font-family: font-ital;
+}
+footer .right-part div {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 20% 40%;
+  gap: 1%;
+  align-items: center;
+  box-shadow: -1px 1px rgb(129, 129, 129);
+  padding: 15px;
+  height: 120px;
+}
+footer .right-part h6 {
+  font-family: font-1;
+  text-transform: uppercase;
+  color: rgb(129, 129, 129);
+  font-size: 0.8rem;
+}
+footer .right-part p {
+  color: rgb(129, 129, 129);
+  font-size: 0.8rem;
+}
+footer .right-part .social {
+  display: flex;
+  justify-content: space-around;
+}
+footer .right-part .social a {
+  color: rgb(18, 18, 18);
+  border: solid 0.5px rgb(18, 18, 18);
+  padding: 10px;
+  border-radius: 1000px;
+  margin: 10px;
+  font-size: 0.8rem;
 }/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,33 @@
+header {
+  h1 {
+    font-family: font-bold, sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: $color1;
+    @include center;
+    text-align: center;
+    padding: 300px 100px 30px;
+    // max-width: 300px;
+    margin: 0 auto;
+    letter-spacing: 5px;
+  }
+
+  p {
+    font-family: font-ital, serif;
+    color: $color1;
+    @include center;
+  }
+
+  .arrow-down {
+    @include center;
+
+    i {
+      font-size: 1rem;
+      color: $color1;
+      padding: 20px;
+      border: solid 2px $color1;
+      margin: 120px;
+      border-radius: 10000000%;
+    }
+  }
+}

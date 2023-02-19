@@ -1,0 +1,59 @@
+nav {
+  width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 60% 30%;
+  gap: 10%;
+  background: rgba(255, 255, 255, 0.31);
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .social {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  ul {
+    @include center;
+
+    .home {
+      width: 100%;
+      color: $color2;
+      background: $color1;
+    }
+
+    button {
+      cursor: pointer;
+      height: 100%;
+      margin: 0;
+      padding: 20px;
+      text-decoration: none;
+      font-family: font-1;
+      text-transform: uppercase;
+      font-size: 1rem;
+      border-style: none;
+      background: transparent;
+      color: $color1;
+
+      &:hover {
+        color: $color2;
+        background: $color1;
+        ~ .home {
+          background: transparent;
+          color: $color1;
+        }
+      }
+      a {
+        text-decoration: none;
+        color: $color1;
+        font-size: 1rem;
+        &:hover {
+          color: $color2;
+        }
+      }
+    }
+  }
+}

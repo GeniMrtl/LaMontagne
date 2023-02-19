@@ -22,23 +22,24 @@
   </head>
   <body>
     <header>
-      <h1>La montagne ça vous gagne</h1>
+      <div class="img-bg"></div>
+      <h1>La montagne <br />ça vous gagne</h1>
       <p class="ital">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, ab.
       </p>
-      <div class="arrow down">
+      <div class="arrow-down">
         <i class="fa-solid fa-arrow-down"></i>
       </div>
       <nav>
         <ul class="nav">
           <li>
-            <a href="link">This is massively</a>
+            <button class="home">This is massively</button>
           </li>
           <li>
-            <a href="link">Generic Page</a>
+            <button>Generic page</button>
           </li>
           <li>
-            <a href="link">Elements references</a>
+            <button>Element reference</button>
           </li>
         </ul>
         <ul class="social">
@@ -57,62 +58,64 @@
         </ul>
       </nav>
     </header>
-    <section class="part-1">
-      <div class="date">
-        <h4>April, 25, 2017</h4>
-      </div>
-      <h2>And this is a massive headline</h2>
-      <p class="ital">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, illo
-        sit fuga, illum odio minus consectetur provident, quisquam aliquam
-        maxime officiis cum sapiente. Repellendus sed magnam nam, laboriosam
-        voluptatibus itaque adipisci praesentium placeat voluptatem earum
-        accusamus. Ea neque nemo asperiores!
-      </p>
-      <div class="image-1"></div>
-      <button class="button">Full story</button>
-    </section>
-    <section class="part-2">
-      <div class="news-1">
-        <h4>April, 24 2017</h4>
-        <h3>Sed magna ipsum faucibus</h3>
-        <div class="img-2"></div>
+    <section class="milieu">
+      <section class="part-1">
+        <div class="date">
+          <h4>April, 25, 2017</h4>
+        </div>
+        <h2>
+          And this is a <br />
+          massive headline
+        </h2>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi
-          perspiciatis, a optio neque nisi excepturi voluptatem, quos molestias
-          non, perferendis inventore molestiae tempora consequatur veniam at.
-          Reiciendis blanditiis aliquid facere.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate,
+          illo sit fuga, illum odio minus consectetur provident, quisquam
+          aliquam maxime officiis cum sapiente!
         </p>
-        <button class="button">Full story</button>
-      </div>
-      <div class="news-2">
-        <h4>April, 24 2017</h4>
-        <h3>Sed magna ipsum faucibus</h3>
-        <div class="img-2"></div>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi
-          perspiciatis, a optio neque nisi excepturi voluptatem, quos molestias
-          non, perferendis inventore molestiae tempora consequatur veniam at.
-          Reiciendis blanditiis aliquid facere.
-        </p>
-        <button class="button">Full story</button>
-      </div>
+        <div class="image-1"></div>
+        <div class="button-container">
+          <button class="button">Full story</button>
+        </div>
+      </section>
+      <section class="part-2">
+        <div class="news-1">
+          <h4>April, 24 2017</h4>
+          <h3>Sed magna <br />ipsum faucibus</h3>
+          <div class="img-2"></div>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi
+            perspiciatis, a optio neque nisi excepturi voluptatem, quos
+            molestias non, perferendis inventore molestiae tempora consequatur
+            veniam at. Reiciendis blanditiis aliquid facere.
+          </p>
+          <button class="button">Full story</button>
+        </div>
+        <div class="news-2">
+          <h4>April, 24 2017</h4>
+          <h3>
+            Sed magna <br />
+            ipsum faucibus
+          </h3>
+          <div class="img-3"></div>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi
+            perspiciatis, a optio neque nisi excepturi voluptatem, quos
+            molestias non, perferendis inventore molestiae tempora consequatur
+            veniam at. Reiciendis blanditiis aliquid facere.
+          </p>
+          <button class="button">Full story</button>
+        </div>
+      </section>
     </section>
     <footer>
       <div class="left-part">
         <form action="/action.php">
-          <div>
-            <label for="name">Name</label>
-            <input type="text" id="name" />
-          </div>
-          <div>
-            <label for="email">Email</label>
-            <input type="text" id="email" />
-          </div>
-          <div>
-            <label for="message">Message</label>
-            <input type="textarea" id="message" />
-          </div>
+          <label for="name">Name</label>
+          <input type="text" id="name" />
+          <label for="email">Email</label>
+          <input type="text" id="email" />
+          <label for="message">Message</label>
+          <input type="textarea" id="message" />
           <input type="submit" class="button" value="send message" />
         </form>
       </div>

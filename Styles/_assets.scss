@@ -1,0 +1,21 @@
+button {
+  cursor: pointer;
+  text-decoration: none;
+  font-family: font-1;
+  font-weight: 200;
+  text-transform: uppercase;
+  padding: 10px;
+  font-size: 0.8rem;
+  border-style: none;
+  background: transparent;
+  color: $color2;
+  border: solid 1px $color2;
+  display: block;
+  margin: 30px auto;
+
+  &:hover {
+    background: $color2;
+    color: $color1;
+    font-family: font-ital;
+  }
+}

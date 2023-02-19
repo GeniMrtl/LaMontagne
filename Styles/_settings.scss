@@ -1,10 +1,14 @@
 @font-face {
   font-family: "font-1";
-  src: url(./fonts/Inter-ExtraBold.ttf);
+  src: url(./fonts/Inter-SemiBold.ttf);
 }
 @font-face {
   font-family: "font-2";
   src: url(./fonts/Inter-Thin.ttf);
+}
+@font-face {
+  font-family: "font-bold";
+  src: url(./fonts/Inter-ExtraBold.ttf);
 }
 @font-face {
   font-family: "font-ital";
@@ -13,7 +17,7 @@
 
 $color1: rgb(233, 233, 233);
 $color2: rgb(18, 18, 18);
-$color3: rgb(186, 186, 186);
+$color3: rgb(129, 129, 129);
 
 @mixin center {
   display: flex;
@@ -26,4 +30,23 @@ $color3: rgb(186, 186, 186);
   padding: 0;
   box-sizing: border-box;
   list-style: none;
+}
+
+body {
+  background: url(../Styles/images/bg1.jpg) fixed center/cover;
+}
+
+.milieu {
+  width: 1000px;
+  margin: 0 auto;
+  background: $color1;
+}
+
+a {
+  text-decoration: none;
+  color: $color1;
+  font-size: 1rem;
+  &:hover {
+    color: $color2;
+  }
 }
