@@ -37,16 +37,7 @@ body {
 }
 
 .milieu {
-  width: 1000px;
+  width: 85%;
   margin: 0 auto;
   background: $color1;
-}
-
-a {
-  text-decoration: none;
-  color: $color1;
-  font-size: 1rem;
-  &:hover {
-    color: $color2;
-  }
 }

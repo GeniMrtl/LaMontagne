@@ -5,6 +5,10 @@
     padding: 50px;
     position: relative;
     color: $color2;
+
+    @media screen and (max-width: 700px) {
+      font-size: 1.2rem;
+    }
     &:before {
       content: "";
       background: $color3;
@@ -12,6 +16,11 @@
       height: 0.5px;
       position: absolute;
       transform: translate(-300px, 10px);
+
+      @media screen and (max-width: 700px) {
+        transform: translate(-160px, 10px);
+        width: 20%;
+      }
     }
     &:after {
       content: "";
@@ -20,6 +29,11 @@
       height: 0.5px;
       position: absolute;
       transform: translate(65px, 10px);
+
+      @media screen and (max-width: 700px) {
+        transform: translate(40px, 10px);
+        width: 20%;
+      }
     }
   }
 
@@ -35,10 +49,14 @@
 
   p {
     font-family: font-ital;
-    color: $color3;
+    color: $color2;
     text-align: center;
     width: 40%;
     margin: 30px auto;
+
+    @media screen and (max-width: 700px) {
+      line-height: 40px;
+    }
   }
 
   .image-1 {
@@ -46,5 +64,9 @@
     height: 500px;
     width: 80%;
     margin: 0 auto;
+
+    @media screen and (max-width: 700px) {
+      height: 300px;
+    }
   }
 }

@@ -18,4 +18,10 @@ button {
     color: $color1;
     font-family: font-ital;
   }
+
+  @media screen and (max-width: 700px) {
+    font-size: 1rem;
+    padding: 15px;
+    letter-spacing: 4px;
+  }
 }

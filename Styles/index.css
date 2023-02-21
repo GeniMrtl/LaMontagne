@@ -26,18 +26,9 @@ body {
 }
 
 .milieu {
-  width: 1000px;
+  width: 85%;
   margin: 0 auto;
   background: rgb(233, 233, 233);
-}
-
-a {
-  text-decoration: none;
-  color: rgb(233, 233, 233);
-  font-size: 1rem;
-}
-a:hover {
-  color: rgb(18, 18, 18);
 }
 
 button {
@@ -59,6 +50,13 @@ button:hover {
   background: rgb(18, 18, 18);
   color: rgb(233, 233, 233);
   font-family: font-ital;
+}
+@media screen and (max-width: 700px) {
+  button {
+    font-size: 1rem;
+    padding: 15px;
+    letter-spacing: 4px;
+  }
 }
 
 header h1 {
@@ -96,20 +94,36 @@ header .arrow-down i {
 }
 
 nav {
-  width: 1000px;
+  width: 85%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 60% 30%;
   gap: 10%;
   background: rgba(255, 255, 255, 0.31);
 }
+@media screen and (max-width: 700px) {
+  nav {
+    display: flex;
+  }
+}
 nav .nav {
   display: flex;
   justify-content: space-between;
+  color: rgb(129, 129, 129);
+}
+@media screen and (max-width: 700px) {
+  nav .nav {
+    justify-content: space-around;
+  }
 }
 nav .social {
   display: flex;
   justify-content: space-around;
+}
+@media screen and (max-width: 700px) {
+  nav .social {
+    display: none;
+  }
 }
 nav ul {
   display: flex;
@@ -142,12 +156,18 @@ nav ul button:hover ~ .home {
   background: transparent;
   color: rgb(233, 233, 233);
 }
-nav ul button a {
+@media screen and (max-width: 570px) {
+  nav ul button {
+    font-size: 0.5rem;
+    padding: 10px;
+  }
+}
+nav a {
   text-decoration: none;
-  color: rgb(233, 233, 233);
+  color: rgb(129, 129, 129);
   font-size: 1rem;
 }
-nav ul button a:hover {
+nav a:hover {
   color: rgb(18, 18, 18);
 }
 
@@ -158,6 +178,11 @@ nav ul button a:hover {
   position: relative;
   color: rgb(18, 18, 18);
 }
+@media screen and (max-width: 700px) {
+  .part-1 h4 {
+    font-size: 1.2rem;
+  }
+}
 .part-1 h4:before {
   content: "";
   background: rgb(129, 129, 129);
@@ -166,6 +191,12 @@ nav ul button a:hover {
   position: absolute;
   transform: translate(-300px, 10px);
 }
+@media screen and (max-width: 700px) {
+  .part-1 h4:before {
+    transform: translate(-160px, 10px);
+    width: 20%;
+  }
+}
 .part-1 h4:after {
   content: "";
   background: rgb(129, 129, 129);
@@ -173,6 +204,12 @@ nav ul button a:hover {
   height: 0.5px;
   position: absolute;
   transform: translate(65px, 10px);
+}
+@media screen and (max-width: 700px) {
+  .part-1 h4:after {
+    transform: translate(40px, 10px);
+    width: 20%;
+  }
 }
 .part-1 h2 {
   font-family: font-bold;
@@ -185,10 +222,15 @@ nav ul button a:hover {
 }
 .part-1 p {
   font-family: font-ital;
-  color: rgb(129, 129, 129);
+  color: rgb(18, 18, 18);
   text-align: center;
   width: 40%;
   margin: 30px auto;
+}
+@media screen and (max-width: 700px) {
+  .part-1 p {
+    line-height: 40px;
+  }
 }
 .part-1 .image-1 {
   background: url(./images/pic01.jpg) center/cover;
@@ -196,17 +238,47 @@ nav ul button a:hover {
   width: 80%;
   margin: 0 auto;
 }
+@media screen and (max-width: 700px) {
+  .part-1 .image-1 {
+    height: 300px;
+  }
+}
 
 .part-2 {
   display: flex;
+}
+@media screen and (max-width: 700px) {
+  .part-2 {
+    flex-direction: column;
+  }
 }
 .part-2 .news-1 {
   padding: 30px;
   box-shadow: 1px -1px 0px rgba(0, 0, 0, 0.2705882353);
 }
+@media screen and (max-width: 700px) {
+  .part-2 .news-1 {
+    box-shadow: none;
+    position: relative;
+  }
+  .part-2 .news-1::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    transform: translateX(-30px);
+    background: rgb(129, 129, 129);
+    position: absolute;
+  }
+}
 .part-2 .news-2 {
   padding: 30px;
   box-shadow: 0px -1px 0px rgba(0, 0, 0, 0.2705882353);
+}
+@media screen and (max-width: 700px) {
+  .part-2 .news-2 {
+    box-shadow: none;
+    position: relative;
+  }
 }
 .part-2 h4 {
   text-align: center;
@@ -214,6 +286,11 @@ nav ul button a:hover {
   font-size: 0.8rem;
   padding: 20px;
   color: rgb(18, 18, 18);
+}
+@media screen and (max-width: 700px) {
+  .part-2 h4 {
+    font-size: 1.2rem;
+  }
 }
 .part-2 h3 {
   font-family: font-1;
@@ -247,11 +324,17 @@ nav ul button a:hover {
 }
 
 footer {
-  width: 1000px;
-  background: rgb(233, 233, 233);
+  width: 85%;
   margin: 30px auto;
+  background: rgb(233, 233, 233);
   display: grid;
   grid-template-columns: 50% 50%;
+}
+@media screen and (max-width: 700px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
 }
 footer .left-part {
   padding: 20px;
@@ -259,6 +342,12 @@ footer .left-part {
 footer .left-part form {
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 700px) {
+  footer .left-part form {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 footer .left-part form label {
   font-family: font-1;
@@ -310,6 +399,18 @@ footer .left-part form input[type=submit]:hover {
   color: rgb(233, 233, 233);
   font-family: font-ital;
 }
+@media screen and (max-width: 700px) {
+  footer .right-part {
+    position: relative;
+  }
+  footer .right-part::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: rgb(129, 129, 129);
+    position: absolute;
+  }
+}
 footer .right-part div {
   display: grid;
   margin: 0 auto;
@@ -320,11 +421,23 @@ footer .right-part div {
   padding: 15px;
   height: 120px;
 }
+@media screen and (max-width: 700px) {
+  footer .right-part div {
+    grid-template-columns: 50% 50%;
+    box-shadow: 0px 1px rgb(129, 129, 129);
+    padding: 10px 30px;
+  }
+}
 footer .right-part h6 {
   font-family: font-1;
   text-transform: uppercase;
   color: rgb(129, 129, 129);
   font-size: 0.8rem;
+}
+@media screen and (max-width: 700px) {
+  footer .right-part h6 {
+    margin: 20px;
+  }
 }
 footer .right-part p {
   color: rgb(129, 129, 129);
@@ -336,9 +449,15 @@ footer .right-part .social {
 }
 footer .right-part .social a {
   color: rgb(18, 18, 18);
-  border: solid 0.5px rgb(18, 18, 18);
+  border: solid 0.5px rgb(129, 129, 129);
   padding: 10px;
   border-radius: 1000px;
   margin: 10px;
   font-size: 0.8rem;
+}
+@media screen and (max-width: 700px) {
+  footer .right-part .social a {
+    justify-content: space-between;
+    margin: 3px;
+  }
 }/*# sourceMappingURL=index.css.map */
