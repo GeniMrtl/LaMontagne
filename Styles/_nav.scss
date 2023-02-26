@@ -1,10 +1,14 @@
 nav {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
   width: 85%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 60% 30%;
   gap: 10%;
-  background: rgba(255, 255, 255, 0.31);
+  background: rgba(255, 255, 255, 0.274);
 
   @media screen and (max-width: 700px) {
     display: flex;
@@ -13,14 +17,52 @@ nav {
   .nav {
     display: flex;
     justify-content: space-between;
-    color: $color3;
+    color: $white1;
 
     @media screen and (max-width: 700px) {
       justify-content: space-around;
     }
   }
 
+  ul {
+    @include center;
+    &:hover button:not(:hover) {
+      background: none;
+      color: $white1;
+    }
+
+    .home {
+      width: 100%;
+      color: $black1;
+      background: $white1;
+    }
+
+    button {
+      @include title;
+      height: 100%;
+      cursor: pointer;
+      height: 100%;
+      margin: 0;
+      padding: 15px;
+      text-decoration: none;
+      font-size: 0.7rem;
+      border-style: none;
+      background: transparent;
+      color: $white1;
+
+      &:hover {
+        color: $black1;
+        background: $white1;
+      }
+
+      @media screen and (max-width: 570px) {
+        padding: 10px;
+      }
+    }
+  }
   .social {
+    min-width: 100px;
+    max-width: 300px;
     display: flex;
     justify-content: space-around;
 
@@ -28,50 +70,14 @@ nav {
       display: none;
     }
   }
-
-  ul {
-    @include center;
-
-    .home {
-      width: 100%;
-      color: $color2;
-      background: $color1;
-    }
-
-    button {
-      cursor: pointer;
-      height: 100%;
-      margin: 0;
-      padding: 20px;
-      text-decoration: none;
-      font-family: font-1;
-      text-transform: uppercase;
-      font-size: 1rem;
-      border-style: none;
-      background: transparent;
-      color: $color1;
-
-      &:hover {
-        color: $color2;
-        background: $color1;
-        ~ .home {
-          background: transparent;
-          color: $color1;
-        }
-      }
-
-      @media screen and (max-width: 570px) {
-        font-size: 0.5rem;
-        padding: 10px;
-      }
-    }
-  }
   a {
+    cursor: pointer;
     text-decoration: none;
-    color: $color3;
-    font-size: 1rem;
+    color: $white1;
+    font-size: 1.5rem;
+    transition: 0.15s;
     &:hover {
-      color: $color2;
+      color: black;
     }
   }
 }

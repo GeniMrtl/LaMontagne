@@ -1,7 +1,7 @@
 footer {
   width: 85%;
   margin: 30px auto;
-  background: $color1;
+  background: $grey2;
   display: grid;
   grid-template-columns: 50% 50%;
 
@@ -23,7 +23,8 @@ footer {
 
       label {
         font-family: font-1;
-        color: $color3;
+        text-align: left;
+        color: $grey1;
         text-transform: uppercase;
         font-size: 0.7rem;
         padding: 20px 0;
@@ -34,13 +35,13 @@ footer {
 
         &:focus {
           box-shadow: 1px 1px 1px rgb(0, 15, 128);
-          border: solid 1px $color2;
+          border: solid 1px $black1;
         }
       }
 
       input[type="text"] {
         border-style: none;
-        border: 1px solid $color3;
+        border: 1px solid $grey1;
         height: 40px;
         outline: none;
         background: transparent;
@@ -48,7 +49,7 @@ footer {
       }
       input[type="textarea"] {
         border-style: none;
-        border: 1px solid $color3;
+        border: 1px solid $grey1;
         height: 100px;
         outline: none;
         background: transparent;
@@ -65,14 +66,14 @@ footer {
         font-size: 0.8rem;
         border-style: none;
         background: transparent;
-        color: $color3;
-        border: solid 1px $color3;
+        color: $grey1;
+        border: solid 1px $grey1;
         width: 200px;
         margin: 30px 0;
 
         &:hover {
-          background: $color2;
-          color: $color1;
+          background: $black1;
+          color: $white1;
           font-family: font-ital;
         }
       }
@@ -86,7 +87,7 @@ footer {
         content: "";
         width: 100%;
         height: 1px;
-        background: $color3;
+        background: $grey1;
         position: absolute;
       }
     }
@@ -96,20 +97,20 @@ footer {
       grid-template-columns: 20% 40%;
       gap: 1%;
       align-items: center;
-      box-shadow: -1px 1px $color3;
+      box-shadow: -1px 1px $grey1;
       padding: 15px;
       height: 120px;
 
       @media screen and (max-width: 700px) {
         grid-template-columns: 50% 50%;
-        box-shadow: 0px 1px $color3;
+        box-shadow: 0px 1px $grey1;
         padding: 10px 30px;
       }
     }
     h6 {
       font-family: font-1;
       text-transform: uppercase;
-      color: $color3;
+      color: $grey1;
       font-size: 0.8rem;
       @media screen and (max-width: 700px) {
         margin: 20px;
@@ -117,7 +118,7 @@ footer {
     }
 
     p {
-      color: $color3;
+      color: $grey1;
       font-size: 0.8rem;
     }
 
@@ -126,8 +127,8 @@ footer {
       justify-content: space-around;
 
       a {
-        color: $color2;
-        border: solid 0.5px $color3;
+        color: $black1;
+        border: solid 0.5px $grey1;
         padding: 10px;
         border-radius: 1000px;
         margin: 10px;

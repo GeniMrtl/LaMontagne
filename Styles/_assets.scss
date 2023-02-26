@@ -1,21 +1,20 @@
-button {
+.button {
   cursor: pointer;
   text-decoration: none;
-  font-family: font-1;
-  font-weight: 200;
-  text-transform: uppercase;
   padding: 10px;
   font-size: 0.8rem;
   border-style: none;
   background: transparent;
-  color: $color2;
-  border: solid 1px $color2;
+  color: $black1;
+  border: solid 1px $black1;
   display: block;
   margin: 30px auto;
+  @include title;
+  transition: 0.2s;
 
   &:hover {
-    background: $color2;
-    color: $color1;
+    background: $black1;
+    color: $white1;
     font-family: font-ital;
   }
 

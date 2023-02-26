@@ -1,33 +1,49 @@
 header {
-  h1 {
-    font-family: font-bold, sans-serif;
-    font-size: 3rem;
-    text-transform: uppercase;
-    color: $color1;
-    @include center;
-    text-align: center;
-    padding: 300px 100px 30px;
-    // max-width: 300px;
-    margin: 0 auto;
-    letter-spacing: 5px;
-  }
+  color: $white1;
+  position: relative;
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(40px);
+    animation: AnimHeader 1.35s forwards;
+    @keyframes AnimHeader {
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    h1 {
+      @include title;
+      font-family: font-bold, sans-serif;
+      font-size: 3rem;
+      @include center;
+      text-align: center;
+      margin: 0 auto;
+      letter-spacing: 6px;
+    }
 
-  p {
-    font-family: font-ital, serif;
-    color: $color1;
-    @include center;
-  }
+    p {
+      font-family: font-ital, serif;
+      margin: 40px auto 60px;
+      width: 85%;
+    }
 
-  .arrow-down {
-    @include center;
-
-    i {
-      font-size: 1rem;
-      color: $color1;
-      padding: 20px;
-      border: solid 2px $color1;
-      margin: 120px;
-      border-radius: 10000000%;
+    .arrow-down {
+      i {
+        font-size: 1rem;
+        height: 60px;
+        width: 60px;
+        padding: 20px;
+        border: solid 2px $white1;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     }
   }
 }
