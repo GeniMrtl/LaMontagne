@@ -110,12 +110,14 @@
       <div class="left-part">
         <form action="/action.php">
           <label for="name">Name</label>
-          <input type="text" id="name" />
+          <input type="text" id="name" autocomplete="off" />
           <label for="email">Email</label>
           <input type="text" id="email" />
           <label for="message">Message</label>
           <input type="textarea" id="message" />
-          <input type="submit" class="button" value="send message" />
+          <div class="submit-container">
+            <input type="submit" class="button" value="send message" />
+          </div>
         </form>
       </div>
       <div class="right-part">

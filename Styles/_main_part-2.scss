@@ -12,15 +12,7 @@
     @media screen and (max-width: 700px) {
       box-shadow: none;
       position: relative;
-
-      &::before {
-        content: "";
-        width: 100%;
-        height: 1px;
-        transform: translateX(-30px);
-        background: $grey1;
-        position: absolute;
-      }
+      border-top: solid 1px $grey1;
     }
   }
 
@@ -29,8 +21,8 @@
     box-shadow: 0px -1px 0px #00000045;
 
     @media screen and (max-width: 700px) {
-      box-shadow: none;
       position: relative;
+      border-top: solid 1px $grey1;
     }
   }
 

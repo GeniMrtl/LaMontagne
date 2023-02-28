@@ -14,20 +14,19 @@ footer {
     padding: 20px;
 
     form {
-      display: flex;
-      flex-direction: column;
+      display: grid;
+      grid-template-rows: 18px 45px 18px 45px 18px 200px 1fr;
+      gap: 20px;
       @media screen and (max-width: 700px) {
         width: 80%;
         margin: 0 auto;
       }
 
       label {
-        font-family: font-1;
+        @include title;
         text-align: left;
         color: $grey1;
-        text-transform: uppercase;
         font-size: 0.7rem;
-        padding: 20px 0;
       }
 
       input {
@@ -42,7 +41,6 @@ footer {
       input[type="text"] {
         border-style: none;
         border: 1px solid $grey1;
-        height: 40px;
         outline: none;
         background: transparent;
         border-radius: 3px;
@@ -50,17 +48,20 @@ footer {
       input[type="textarea"] {
         border-style: none;
         border: 1px solid $grey1;
-        height: 100px;
         outline: none;
         background: transparent;
         border-radius: 3px;
+      }
+
+      .submit-container {
+        display: flex;
+        align-items: flex-end;
       }
 
       input[type="submit"] {
         cursor: pointer;
         text-decoration: none;
         font-family: font-1;
-        font-weight: 200;
         text-transform: uppercase;
         padding: 10px;
         font-size: 0.8rem;
@@ -68,8 +69,7 @@ footer {
         background: transparent;
         color: $grey1;
         border: solid 1px $grey1;
-        width: 200px;
-        margin: 30px 0;
+        margin: 0;
 
         &:hover {
           background: $black1;
@@ -80,46 +80,44 @@ footer {
     }
   }
   .right-part {
+    grid-template-rows: repeat(4, 1fr);
+
     @media screen and (max-width: 700px) {
       position: relative;
-
-      &::before {
-        content: "";
-        width: 100%;
-        height: 1px;
-        background: $grey1;
-        position: absolute;
-      }
+      border-top: solid 1px $grey1;
     }
+
     div {
       display: grid;
       margin: 0 auto;
-      grid-template-columns: 20% 40%;
-      gap: 1%;
+      grid-template-columns: 30% 60%;
+      gap: 10%;
       align-items: center;
       box-shadow: -1px 1px $grey1;
       padding: 15px;
-      height: 120px;
+      height: 25%;
 
       @media screen and (max-width: 700px) {
-        grid-template-columns: 50% 50%;
-        box-shadow: 0px 1px $grey1;
-        padding: 10px 30px;
+        grid-template-columns: 40% 40%;
       }
     }
     h6 {
-      font-family: font-1;
-      text-transform: uppercase;
+      @include title;
       color: $grey1;
       font-size: 0.8rem;
+      text-align: left;
+      padding-left: 30px;
       @media screen and (max-width: 700px) {
-        margin: 20px;
+        margin: 15px;
       }
     }
 
     p {
       color: $grey1;
       font-size: 0.8rem;
+      text-align: left;
+      display: flex;
+      justify-content: left;
     }
 
     .social {
@@ -128,16 +126,16 @@ footer {
 
       a {
         color: $black1;
-        border: solid 0.5px $grey1;
-        padding: 10px;
-        border-radius: 1000px;
-        margin: 10px;
-        font-size: 0.8rem;
-
-        @media screen and (max-width: 700px) {
-          justify-content: space-between;
-          margin: 3px;
-        }
+        font-size: 1.1rem;
+        border: solid 1px $grey1;
+        border-radius: 150px;
+        height: 40px;
+        width: 40px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        text-decoration: none;
       }
     }
   }

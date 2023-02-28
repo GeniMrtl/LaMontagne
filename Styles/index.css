@@ -316,14 +316,7 @@ nav a:hover {
   .part-2 .news-1 {
     box-shadow: none;
     position: relative;
-  }
-  .part-2 .news-1::before {
-    content: "";
-    width: 100%;
-    height: 1px;
-    transform: translateX(-30px);
-    background: rgb(129, 129, 129);
-    position: absolute;
+    border-top: solid 1px rgb(129, 129, 129);
   }
 }
 .part-2 .news-2 {
@@ -332,8 +325,8 @@ nav a:hover {
 }
 @media screen and (max-width: 700px) {
   .part-2 .news-2 {
-    box-shadow: none;
     position: relative;
+    border-top: solid 1px rgb(129, 129, 129);
   }
 }
 .part-2 h4 {
@@ -397,8 +390,9 @@ footer .left-part {
   padding: 20px;
 }
 footer .left-part form {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 18px 45px 18px 45px 18px 200px 1fr;
+  gap: 20px;
 }
 @media screen and (max-width: 700px) {
   footer .left-part form {
@@ -408,11 +402,11 @@ footer .left-part form {
 }
 footer .left-part form label {
   font-family: font-1;
+  letter-spacing: 2px;
+  text-transform: uppercase;
   text-align: left;
   color: rgb(129, 129, 129);
-  text-transform: uppercase;
   font-size: 0.7rem;
-  padding: 20px 0;
 }
 footer .left-part form input {
   padding: 10px;
@@ -424,7 +418,6 @@ footer .left-part form input:focus {
 footer .left-part form input[type=text] {
   border-style: none;
   border: 1px solid rgb(129, 129, 129);
-  height: 40px;
   outline: none;
   background: transparent;
   border-radius: 3px;
@@ -432,16 +425,18 @@ footer .left-part form input[type=text] {
 footer .left-part form input[type=textarea] {
   border-style: none;
   border: 1px solid rgb(129, 129, 129);
-  height: 100px;
   outline: none;
   background: transparent;
   border-radius: 3px;
+}
+footer .left-part form .submit-container {
+  display: flex;
+  align-items: flex-end;
 }
 footer .left-part form input[type=submit] {
   cursor: pointer;
   text-decoration: none;
   font-family: font-1;
-  font-weight: 200;
   text-transform: uppercase;
   padding: 10px;
   font-size: 0.8rem;
@@ -449,57 +444,57 @@ footer .left-part form input[type=submit] {
   background: transparent;
   color: rgb(129, 129, 129);
   border: solid 1px rgb(129, 129, 129);
-  width: 200px;
-  margin: 30px 0;
+  margin: 0;
 }
 footer .left-part form input[type=submit]:hover {
   background: rgb(18, 18, 18);
   color: rgb(233, 233, 233);
   font-family: font-ital;
 }
+footer .right-part {
+  grid-template-rows: repeat(4, 1fr);
+}
 @media screen and (max-width: 700px) {
   footer .right-part {
     position: relative;
-  }
-  footer .right-part::before {
-    content: "";
-    width: 100%;
-    height: 1px;
-    background: rgb(129, 129, 129);
-    position: absolute;
+    border-top: solid 1px rgb(129, 129, 129);
   }
 }
 footer .right-part div {
   display: grid;
   margin: 0 auto;
-  grid-template-columns: 20% 40%;
-  gap: 1%;
+  grid-template-columns: 30% 60%;
+  gap: 10%;
   align-items: center;
   box-shadow: -1px 1px rgb(129, 129, 129);
   padding: 15px;
-  height: 120px;
+  height: 25%;
 }
 @media screen and (max-width: 700px) {
   footer .right-part div {
-    grid-template-columns: 50% 50%;
-    box-shadow: 0px 1px rgb(129, 129, 129);
-    padding: 10px 30px;
+    grid-template-columns: 40% 40%;
   }
 }
 footer .right-part h6 {
   font-family: font-1;
+  letter-spacing: 2px;
   text-transform: uppercase;
   color: rgb(129, 129, 129);
   font-size: 0.8rem;
+  text-align: left;
+  padding-left: 30px;
 }
 @media screen and (max-width: 700px) {
   footer .right-part h6 {
-    margin: 20px;
+    margin: 15px;
   }
 }
 footer .right-part p {
   color: rgb(129, 129, 129);
   font-size: 0.8rem;
+  text-align: left;
+  display: flex;
+  justify-content: left;
 }
 footer .right-part .social {
   display: flex;
@@ -507,15 +502,14 @@ footer .right-part .social {
 }
 footer .right-part .social a {
   color: rgb(18, 18, 18);
-  border: solid 0.5px rgb(129, 129, 129);
-  padding: 10px;
-  border-radius: 1000px;
-  margin: 10px;
-  font-size: 0.8rem;
-}
-@media screen and (max-width: 700px) {
-  footer .right-part .social a {
-    justify-content: space-between;
-    margin: 3px;
-  }
+  font-size: 1.1rem;
+  border: solid 1px rgb(129, 129, 129);
+  border-radius: 150px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
 }/*# sourceMappingURL=index.css.map */
