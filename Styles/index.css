@@ -134,6 +134,9 @@ header .header-container p {
   margin: 40px auto 60px;
   width: 85%;
 }
+header .header-container .arrow-down a {
+  text-decoration: none;
+}
 header .header-container .arrow-down i {
   font-size: 1rem;
   height: 60px;
